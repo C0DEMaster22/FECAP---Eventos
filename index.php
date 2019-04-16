@@ -16,7 +16,7 @@
     	label{
     		font-family: verdana;
     		font-size: 120%;
-    		margin-left: 7%;
+    		margin-left: 50px;
     		color:#033800;
 
 
@@ -35,55 +35,65 @@
 
 	<br/><br/>
 
-   		<form style="background-color:#e8ede8"class="col-sm-4 col-md-12">
-
-   			<div class="form-group col-sm-4 col-md-10">
-					<label for="sexo">Público *</label> <br/>
-					<select name="sexo" class="form-control col-sm-2 col-md-10" style="margin-left: 15%;width:85%;font-family: verdana; font-size: 120%;height: 45px;background-color: #f7fff7"required>
+   		<form style="background-color:#e8ede8"class="col-sm-auto col-md-12">
+   			<div class="form-group col-sm-2  col-md-5">
+					<h4 style="margin-top: -20px; margin-left: 2%;color:#033800;">Dados Pessoais</h4>
+				</div>
+   			<div class="form-row">
+    			<div class="form-group col-sm-auto col-md-5">
+      			<label for="sexo">Público *</label>
+					<select name="sexo" class="form-control col-sm-2 col-md-10" style="margin-left: 50px;width:220px;font-family: verdana; font-size: 120%;background-color: #f7fff7;margin-right: 0%;"required>
 						<option value="">Selecione</option>
 						<option value="1">Aluno FECAP</option>
 						<option value="2">Ex-Aluno FECAP</option>
 						<option value="3">Visitante</option>
+					</select>
+    		</div>
+    			<div class="form-group col-md-6">
+					<label for="cpf" maxlength="10">CPF *</label>
+					<input type="text" name="cpf" id="cpf" class="form-control" style="margin-left:50px;width:220px;font-family: verdana; font-size: 120%;background-color: #f7fff7"placeholder="CPF" required>
+    			</div>
+  			</div>	
+  		<br/>
 
-					</select><br/>
-				</div>
+
+
+				<div class="form-group col-sm-1 col-md-10">
+					<label for="nome"style="margin-left: 30px">Nome Completo *</label><br/>
+					<input type="text" name="nome" class="form-control" style="margin-left: 40px;width:80%;font-family: verdana; font-size: 120%;height: 45px;background-color: #f7fff7"placeholder="Nome Completo" required maxlength="150"></div> <br/>
 
 
 
-			<div class="form-group col-sm-4 col-md-10">
-					<label for="cpf" maxlength="10">CPF *</label><br/>
-					<input type="text" name="cpf" id="cpf" class="form-control" style="margin-left: 15%;width:83.5%;font-family: verdana; font-size: 120%;height: 45px;background-color: #f7fff7"placeholder="CPF" required maxlength="11">
-				</div>	
-  			</div><br/>
-
-				<div class="form-group col-sm-4 col-md-10">
-					<label for="nome">Nome Completo *</label><br/>
-					<input type="text" name="nome" class="form-control" style="margin-left: 15%;width:83.5%;font-family: verdana; font-size: 120%;height: 45px;background-color: #f7fff7"placeholder="Nome Completo" required maxlength="150"></div> <br/>
-
-				<div class="form-group col-sm-4 col-md-10">
+			<div class="form-row">
+    			<div class="form-group col-sm-auto col-md-5">
 					<label for="data_nasc">Data Nascimento *</label><br/>
-					<input type="data" name="data_nasc" class="form-control" style="margin-left: 15%;width:83.5%;font-family: verdana; font-size: 120%;height: 45px;background-color: #f7fff7" placeholder="Data de Nascimento" required><br/>
-				</div>
-
-				<div class="form-group col-sm-4 col-md-10">
+					<input placeholder="Data de Nascimento"type="date" name="data_nasc" class="form-control" style="margin-left: 60px;width:220px;font-family: verdana; font-size: 120%;height: 45px;background-color: #f7fff7"  required></div><br/>
+				<div class="form-group col-md-6">
 					<label for="tel_res">Tel Contato *</label><br/>
-					<input type="text" name="tel_res" class="form-control" style="margin-left: 15%;width:83.5%;font-family: verdana; font-size: 120%;height: 45px;background-color: #f7fff7" placeholder="(99) 9999-9999" required maxlength="14"><br/>
-				</div>
+					<input type="text" name="tel_res" class="form-control" style="margin-left: 60px;width:220px;font-family: verdana; font-size: 120%;height: 45px;background-color: #f7fff7" placeholder="(99) 9999-9999" required maxlength="14"><br/>
+				</div></div>
+
+
 
 				<div class="form-group col-sm-4 col-md-10">
-					<label for="email">Email *</label><br/>
-					<input type="email" name="email" class="form-control" style="margin-left: 15%;width:83.5%;font-family: verdana; font-size: 120%;height: 45px;background-color: #f7fff7" placeholder="E-mail" required minlength="8">
+					<label for="email"style="margin-left: 30px">Email *</label><br/>
+					<input type="email" name="email" class="form-control" style="margin-left: 40px;width:80%;font-family: verdana; font-size: 120%;height: 45px;background-color: #f7fff7" placeholder="E-mail" required minlength="8">
 				</div>	<br/>
 
-				<div class="form-group col-sm-4 col-md-10">
+
+
+			<div class="form-row">
+    			<div class="form-group col-sm-2 col-md-5">
 					<label for="curso">Curso *</label><br/>
-					<input type="text" name="curso" class="form-control" style="margin-left: 15%;width:83.5%;font-family: verdana; font-size: 120%;height: 45px;background-color: #f7fff7" placeholder="Curso em que se formou" required>
+					<input type="text" name="curso" class="form-control" style="margin-left: 60px;width:220px;font-family: verdana; font-size: 120%;height: 45px;background-color: #f7fff7" placeholder="Curso em que se formou" required>
 				</div>	<br/>						
 				
-				<div class="form-group col-sm-4 col-md-10">
+				<div class="form-group col-md-6">
 					<label for="ano">Ano de Formatura *</label><br/>
-					<input type="data" name="ano" class="form-control" style="margin-left: 15%;width:83.5%;font-family: verdana; font-size: 120%;height: 45px;background-color: #f7fff7" placeholder="Ano em que se formou" required><br/>
-				</div>
+					<input type="date" name="ano" class="form-control" style="margin-left: 60px;width:220px;font-family: verdana; font-size: 120%;height: 45px;background-color: #f7fff7" placeholder="Ano em que se formou" required><br/>
+				</div></div>
+
+
 
 				<div class="custom-control custom-checkbox col-sm-4 col-md-10"> 
 					<label>Irá trazer algum acompanhante</label><br/>
@@ -93,6 +103,9 @@
 				</div><br/>
 				<br/>
 				<button class="btn btn-primary" type="submit" style="margin-left: 45%;font-family: verdana; font-size: 15px;height: 45px;background-color: #f7fff7;color:#001c07;border-color: transparent;">Enviar</button><br/><br/>
+
+
+
 
   		</div>
 </form>
