@@ -15,8 +15,8 @@
     <style type="text/css">
     	label{
     		font-family: verdana;
-    		font-size: 4.5vw;
-    		margin-left: 3vw;
+    		font-size: 120%;
+    		margin-left: 7%;
     		color:#033800;
 
 
@@ -26,27 +26,74 @@
 
   </head>
 
-  <body style="background-color:#f6f9f6">
+  <body style="background-color:#e8ede8">
    		
-  		<div class="card border-success mb-3" style="max-width: 100%;background-color: #1E6631;">
-  			<div class="card-header">Header<img class="rounded mx-auto d-block"  style ="width:25%;float:left" src="https://www.fecap.br/trabalhe-conosco/assets/img/logo-fecap.png" alt="Responsive image"></div>
+  		<div class="card border-success mb-3 " style="max-width: 100%;height:42%; background-color: #1E6631;">
+  			<div class="card-header col-md-13"style="box-sizing:border-box;	border-radius:5px 5px 5px 5px;"><label style="font-size: 140%;color:#e8ede8;margin-top: 8%;margin-left: 0%;float: right">FECAP - Eventos</label><img class="rounded mx-auto d-block"  style ="width:80px;margin-top: 2%;float: left" src="https://www.fecap.br/trabalhe-conosco/assets/img/logo-fecap.png" alt="Responsive image"></div>
  		 </div>
 </div>
 
-	
+	<br/><br/>
 
-   		<form>
-  			<div class="form-group row">
-    			<label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-    			<div class="col-sm-10">
-      				<input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
-    			</div>
-  			</div>
-  			<div class="form-group row">
-  					<label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-    				<div class="col-sm-10">
-      					<input type="password" class="form-control" id="inputPassword" placeholder="Password">
-    				</div>
+   		<form style="background-color:#e8ede8"class="col-sm-4 col-md-12">
+
+   			<div class="form-group col-sm-4 col-md-10">
+					<label for="sexo">Público *</label> <br/>
+					<select name="sexo" class="form-control col-sm-2 col-md-10" style="margin-left: 15%;width:85%;font-family: verdana; font-size: 120%;height: 45px;background-color: #f7fff7"required>
+						<option value="">Selecione</option>
+						<option value="1">Aluno FECAP</option>
+						<option value="2">Ex-Aluno FECAP</option>
+						<option value="3">Visitante</option>
+
+					</select><br/>
+				</div>
+
+
+
+			<div class="form-group col-sm-4 col-md-10">
+					<label for="cpf" maxlength="10">CPF *</label><br/>
+					<input type="text" name="cpf" id="cpf" class="form-control" style="margin-left: 15%;width:83.5%;font-family: verdana; font-size: 120%;height: 45px;background-color: #f7fff7"placeholder="CPF" required maxlength="11">
+				</div>	
+  			</div><br/>
+
+				<div class="form-group col-sm-4 col-md-10">
+					<label for="nome">Nome Completo *</label><br/>
+					<input type="text" name="nome" class="form-control" style="margin-left: 15%;width:83.5%;font-family: verdana; font-size: 120%;height: 45px;background-color: #f7fff7"placeholder="Nome Completo" required maxlength="150"></div> <br/>
+
+				<div class="form-group col-sm-4 col-md-10">
+					<label for="data_nasc">Data Nascimento *</label><br/>
+					<input type="data" name="data_nasc" class="form-control" style="margin-left: 15%;width:83.5%;font-family: verdana; font-size: 120%;height: 45px;background-color: #f7fff7" placeholder="Data de Nascimento" required><br/>
+				</div>
+
+				<div class="form-group col-sm-4 col-md-10">
+					<label for="tel_res">Tel Contato *</label><br/>
+					<input type="text" name="tel_res" class="form-control" style="margin-left: 15%;width:83.5%;font-family: verdana; font-size: 120%;height: 45px;background-color: #f7fff7" placeholder="(99) 9999-9999" required maxlength="14"><br/>
+				</div>
+
+				<div class="form-group col-sm-4 col-md-10">
+					<label for="email">Email *</label><br/>
+					<input type="email" name="email" class="form-control" style="margin-left: 15%;width:83.5%;font-family: verdana; font-size: 120%;height: 45px;background-color: #f7fff7" placeholder="E-mail" required minlength="8">
+				</div>	<br/>
+
+				<div class="form-group col-sm-4 col-md-10">
+					<label for="curso">Curso *</label><br/>
+					<input type="text" name="curso" class="form-control" style="margin-left: 15%;width:83.5%;font-family: verdana; font-size: 120%;height: 45px;background-color: #f7fff7" placeholder="Curso em que se formou" required>
+				</div>	<br/>						
+				
+				<div class="form-group col-sm-4 col-md-10">
+					<label for="ano">Ano de Formatura *</label><br/>
+					<input type="data" name="ano" class="form-control" style="margin-left: 15%;width:83.5%;font-family: verdana; font-size: 120%;height: 45px;background-color: #f7fff7" placeholder="Ano em que se formou" required><br/>
+				</div>
+
+				<div class="custom-control custom-checkbox col-sm-4 col-md-10"> 
+					<label>Irá trazer algum acompanhante</label><br/>
+						<input type="checkbox" class="custom-control-input"id="customCheck1"><label class="custom-control-label" for="customCheck1">Sim</label>
+						<input type="checkbox" class="custom-control-input" style="	margin-left:5%;"id="customCheck2"> <label class="custom-control-label"
+						for="customCheck2">Não</label>
+				</div><br/>
+				<br/>
+				<button class="btn btn-primary" type="submit" style="margin-left: 45%;font-family: verdana; font-size: 15px;height: 45px;background-color: #f7fff7;color:#001c07;border-color: transparent;">Enviar</button><br/><br/>
+
   		</div>
 </form>
 
