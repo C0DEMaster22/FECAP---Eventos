@@ -95,12 +95,23 @@
 
 
 
-				<div class="custom-control custom-checkbox col-sm-4 col-md-10"> 
-					<label>Irá trazer algum acompanhante</label><br/>
-						<input type="checkbox" class="custom-control-input"id="customCheck1"><label class="custom-control-label" for="customCheck1">Sim</label>
-						<input type="checkbox" class="custom-control-input" style="	margin-left:5%;"id="customCheck2"> <label class="custom-control-label"
-						for="customCheck2">Não</label>
-				</div><br/>
+				<div class="form-check"><label>Irá trazer algum acompanhante ?</label><br/>
+  					<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" style="margin-left: 8%;"checked>
+  					<label class="form-check-label" for="exampleRadios1">Sim</label>
+				
+				
+  					<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" style="margin-left: 8%;">
+  					<label class="form-check-label" for="exampleRadios2">Não</label>
+				</div>
+				<br/>
+				<div class="form-group col-sm-auto col-md-10">
+      			<label for="sexo">Agendar Participação *</label>
+					<select name="sexo" class="form-control col-sm-2 col-md-9" style="margin-left: 50px;width:250%;font-family: verdana; font-size: 120%;background-color: #f7fff7;margin-right: 0%;"required>
+						<option value="">Selecione</option>
+						<option value="1">DD/MM/YY &nbsp;|&nbsp; 00:00/00:00 &nbsp;| 0h &nbsp;|&nbsp; Lugar &nbsp;|&nbsp; Tema &nbsp;|&nbsp; Ministrante</option>
+
+					</select>
+    		</div>
 				<br/>
 				<button class="btn btn-primary" type="submit" style="margin-left: 45%;font-family: verdana; font-size: 15px;height: 45px;background-color: #f7fff7;color:#001c07;border-color: transparent;">Enviar</button><br/><br/>
 
