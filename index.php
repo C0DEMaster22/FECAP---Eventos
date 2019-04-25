@@ -26,16 +26,16 @@
 
   </head>
 
-  <body style="background-color:#e8ede8">
+  <body style="background-color:#f7f9f7">
    		
   		<div class="card border-success mb-3 " style="max-width: 100%;height:42%; background-color: #1E6631;">
-  			<div class="card-header col-md-13"style="box-sizing:border-box;	border-radius:5px 5px 5px 5px;"><label style="font-size: 140%;color:#e8ede8;margin-top: 8%;margin-left: 0%;float: right">FECAP - Eventos</label><img class="rounded mx-auto d-block"  style ="width:80px;margin-top: 2%;float: left" src="https://www.fecap.br/trabalhe-conosco/assets/img/logo-fecap.png" alt="Responsive image"></div>
+  			<div class="card-header col-md-13"style="box-sizing:border-box;	border-radius:5px 5px 5px 5px;"><label style="font-size: 140%;color:#f7f9f7;margin-top: 8%;margin-left: 0%;float: right">FECAP - Eventos</label><img class="rounded mx-auto d-block"  style ="width:80px;margin-top: 2%;float: left" src="https://www.fecap.br/trabalhe-conosco/assets/img/logo-fecap.png" alt="Responsive image"></div>
  		 </div>
 </div>
 
 	<br/><br/>
 
-   		<form style="background-color:#e8ede8"class="col-sm-auto col-md-12">
+   		<form style="background-color:#f7f9f7"class="col-sm-auto col-md-12">
    			<div class="form-group col-sm-2  col-md-5">
 					<h4 style="margin-top: -20px; margin-left: 2%;color:#033800;">Dados Pessoais</h4>
 				</div>
@@ -104,11 +104,11 @@
   					<label class="form-check-label" for="exampleRadios2">Não</label>
 				</div>
 				<br/>
-				<div class="form-group col-sm-auto col-md-10">
+				<div class="form-group col-sm-1 col-md-10">
       			<label for="sexo">Agendar Participação *</label>
-					<select name="sexo" class="form-control col-sm-2 col-md-9" style="margin-left: 50px;width:250%;font-family: verdana; font-size: 120%;background-color: #f7fff7;margin-right: 0%;"required>
+					<select name="sexo" class="form-control col-sm-1 col-md-9" style="margin-left: 15%;width:220px;font-family: verdana; font-size: 120%;background-color: #f7fff7;margin-right: 0%;"required>
 						<option value="">Selecione</option>
-						<option value="1">DD/MM/YY &nbsp;|&nbsp; 00:00/00:00 &nbsp;| 0h &nbsp;|&nbsp; Lugar &nbsp;|&nbsp; Tema &nbsp;|&nbsp; Ministrante</option>
+						<option value="1">DD/MM/YY &nbsp;|&nbsp; 00:00/00:00</option>
 
 					</select>
     		</div>
